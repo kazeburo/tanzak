@@ -22,10 +22,10 @@
       </div>
 
     </form>
+
+    <p>記号の縦書きへの変換と改行に対応しています／<a href="https://github.com/kazeburo/tanzak">ソースコード</a></p>
+    
     </div>
-
-    <p>記号の縦書きへの変換と改行に対応しています</p>
-
   </div>
 </div>
 
