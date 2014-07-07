@@ -1,0 +1,1 @@
+web: plackup -s Starlet --port $PORT -a app.psgi

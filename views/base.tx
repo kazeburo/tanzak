@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>たんざく</title>
+<link rel="shortcut icon" href="<: $c.req.uri_for('/favicon.ico') :>" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<style>
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container {
+  max-width: 500px;
+}
+.header {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+</style>
+<link rel="stylesheet" href="<: $c.req.uri_for('/css/bootstrap-responsive.min.css') :>">
+</head>
+<body>
+
+<div class="container" style="margin-bottom: 10px">
+  <div class="header">
+    <h3><a class="text-muted" href="<: $c.req.uri_for('/') :>">たんざく</a></h3>
+  </div>
+</div>
+
+: block content -> { }
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('#tanzakf').submit(function(e){
+    var t = $('#tanzakt').val();
+    if ( t.length > 0 ) {
+        $.ajax({
+            type: "POST",
+            url: "/api",
+            dataType: "json",
+            data: { q: t }
+        })
+        .done(function( msg ) {
+            $('#tanzakc').val(msg.c);
+        });
+    }
+    e.preventDefault();
+  });
+});
+</script>
+</body>
+</html>
+
+
