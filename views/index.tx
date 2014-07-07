@@ -18,11 +18,13 @@
 
       <div class="form-group">
         <label class="sr-only">たんざく</label>
-        <textarea type="tanzaku" id="tanzakc" class="form-control" rows="20"></textarea>
+        <textarea type="tanzaku" id="tanzakc" class="form-control" rows="15"></textarea>
       </div>
 
     </form>
     </div>
+
+    <p>記号の縦書きへの変換と改行に対応しています</p>
 
   </div>
 </div>
