@@ -58,6 +58,17 @@ $(function(){
         })
         .done(function( msg ) {
             $('#tanzakc').val(msg.c);
+
+var tb = $('<a></a>');
+tb.attr('href', 'https://twitter.com/share');
+tb.attr('class', 'twitter-share-button');
+tb.attr("data-text" , msg.c);
+tb.attr("data-size" ,"large") ;
+tb.attr("data-url" ,"http://tanzak.herokuapp.com/") ;
+tb.attr("data-lang" ,"ja") ;
+$('#tanzaks').children().detach();
+$('#tanzaks').append(tb);
+twttr.widgets.load();
         });
     }
     e.preventDefault();

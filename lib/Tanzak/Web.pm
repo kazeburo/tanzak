@@ -38,7 +38,7 @@ sub tanzaku {
         chomp;
         $tanzaku .= "┃".$_."┃\n";
     }
-    $tanzaku .= "$mergin\n$bottom\n\nたんざく http://tanzak.herokuapp.com/\n";
+    $tanzaku .= "$mergin\n$bottom\n";
     $tanzaku;
 }
 
