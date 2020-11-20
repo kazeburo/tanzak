@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 <title>たんざく</title>
-<link rel="shortcut icon" href="<: $c.req.uri_for('/favicon.ico') :>" type="image/vnd.microsoft.icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <style>
 body {
@@ -31,13 +31,13 @@ body {
 }
 
 </style>
-<link rel="stylesheet" href="<: $c.req.uri_for('/css/bootstrap-responsive.min.css') :>">
+<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
 </head>
 <body>
 
 <div class="container" style="margin-bottom: 10px">
   <div class="header">
-    <h3><a class="text-muted" href="<: $c.req.uri_for('/') :>">たんざく</a></h3>
+    <h3><a class="text-muted" href="/">たんざく</a></h3>
   </div>
 </div>
 
@@ -64,7 +64,7 @@ tb.attr('href', 'https://twitter.com/share');
 tb.attr('class', 'twitter-share-button');
 tb.attr("data-text" , msg.c);
 tb.attr("data-size" ,"large") ;
-tb.attr("data-url" ,"http://tanzak.herokuapp.com/") ;
+tb.attr("data-url" ,"<: $c.req.uri_for('/') :>) ;
 tb.attr("data-lang" ,"ja") ;
 $('#tanzaks').children().detach();
 $('#tanzaks').append(tb);

@@ -7,5 +7,5 @@ WORKDIR /opt/app
 RUN carton install --deployment
 EXPOSE 5000
 COPY . /opt/app
-CMD carton exec -- plackup -s Starlet --port 5000 -a app.psgi
+CMD carton exec -- plackup -s Starlet --max-workers=4 --port 5000 -a app.psgi
 
