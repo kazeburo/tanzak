@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: tanzak
-      TAG_NAME: ${{ github.sha::7 }}
+      TAG_NAME: ${{ github.sha[0:7] }}
     steps:
       - name: checkout
         uses: actions/checkout@v2
