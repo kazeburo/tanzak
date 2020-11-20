@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: tanzak
+      TAG_NME:  ${ GITHUB_SHA::7 }
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -31,4 +32,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
-            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ GITHUB_SHA::7 }}
+            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ env.TAG_NME }}
