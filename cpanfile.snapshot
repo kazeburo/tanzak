@@ -51,6 +51,7 @@ DISTRIBUTIONS
       File::Spec 0.82
       Test::More 0.98
       if 0
+      perl 5.008001
   Class-Accessor-Lite-0.06
     pathname: K/KA/KAZUHO/Class-Accessor-Lite-0.06.tar.gz
     provides:
@@ -158,6 +159,14 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Test 0
       perl 5.008
+  Exporter-Tiny-1.002002
+    pathname: T/TO/TOBYINK/Exporter-Tiny-1.002002.tar.gz
+    provides:
+      Exporter::Shiny 1.002002
+      Exporter::Tiny 1.002002
+    requirements:
+      ExtUtils::MakeMaker 6.17
+      perl 5.006001
   ExtUtils-Config-0.008
     pathname: L/LE/LEONT/ExtUtils-Config-0.008.tar.gz
     provides:
@@ -286,7 +295,6 @@ DISTRIBUTIONS
       HTTP::Body::UrlEncoded 1.19
       HTTP::Body::XForms 1.19
       HTTP::Body::XFormsMultipart 1.19
-      PAML undef
     requirements:
       Carp 0
       Digest::MD5 0
@@ -484,6 +492,7 @@ DISTRIBUTIONS
     pathname: K/KA/KAZEBURO/Kossy-Validator-0.01.tar.gz
     provides:
       Kossy::Validator 0.01
+      Kossy::Validator::Result undef
     requirements:
       CPAN::Meta 0
       CPAN::Meta::Prereqs 0
@@ -508,15 +517,29 @@ DISTRIBUTIONS
       Exporter 5.58
       Module::Build 0.38
       perl 5.008001
-  List-MoreUtils-0.33
-    pathname: A/AD/ADAMK/List-MoreUtils-0.33.tar.gz
+  List-MoreUtils-0.430
+    pathname: R/RE/REHSACK/List-MoreUtils-0.430.tar.gz
     provides:
-      List::MoreUtils 0.33
+      List::MoreUtils 0.430
+      List::MoreUtils::PP 0.430
     requirements:
-      ExtUtils::CBuilder 0.27
-      ExtUtils::MakeMaker 6.52
-      Test::More 0.82
-      perl 5.00503
+      Exporter::Tiny 0.038
+      ExtUtils::MakeMaker 0
+      List::MoreUtils::XS 0.430
+  List-MoreUtils-XS-0.430
+    pathname: R/RE/REHSACK/List-MoreUtils-XS-0.430.tar.gz
+    provides:
+      List::MoreUtils::XS 0.430
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Path 0
+      File::Spec 0
+      IPC::Cmd 0
+      XSLoader 0.22
+      base 0
   Module-Build-0.4208
     pathname: L/LE/LEONT/Module-Build-0.4208.tar.gz
     provides:
@@ -594,25 +617,25 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Module-Build-XSUtil-0.14
-    pathname: H/HI/HIDEAKIO/Module-Build-XSUtil-0.14.tar.gz
+  Module-Build-XSUtil-0.19
+    pathname: H/HI/HIDEAKIO/Module-Build-XSUtil-0.19.tar.gz
     provides:
-      Module::Build::XSUtil 0.14
+      Module::Build::XSUtil 0.19
     requirements:
-      Devel::CheckCompiler 0.02
-      Devel::PPPort 3.19
+      Devel::CheckCompiler 0
+      Devel::PPPort 0
       Exporter 0
       ExtUtils::CBuilder 0
       File::Basename 0
       File::Path 0
       Module::Build 0.4005
-      XSLoader 0.02
+      XSLoader 0
       parent 0
-      perl 5.008005
-  Mouse-2.3.0
-    pathname: G/GF/GFUJI/Mouse-2.3.0.tar.gz
+      perl 5.008001
+  Mouse-v2.5.10
+    pathname: S/SK/SKAJI/Mouse-v2.5.10.tar.gz
     provides:
-      Mouse 2.003000
+      Mouse v2.5.10
       Mouse::Exporter undef
       Mouse::Meta::Attribute undef
       Mouse::Meta::Class undef
@@ -624,15 +647,16 @@ DISTRIBUTIONS
       Mouse::Meta::Module undef
       Mouse::Meta::Role undef
       Mouse::Meta::Role::Application undef
+      Mouse::Meta::Role::Application::RoleSummation undef
       Mouse::Meta::Role::Composite undef
       Mouse::Meta::Role::Method undef
       Mouse::Meta::TypeConstraint undef
       Mouse::Object undef
       Mouse::PurePerl undef
-      Mouse::Role 2.003000
-      Mouse::Spec 2.003000
+      Mouse::Role v2.5.10
+      Mouse::Spec v2.5.10
       Mouse::TypeRegistry undef
-      Mouse::Util 2.003000
+      Mouse::Util v2.5.10
       Mouse::Util::MetaRole undef
       Mouse::Util::TypeConstraints undef
       Squirrel undef
@@ -640,13 +664,9 @@ DISTRIBUTIONS
       Test::Mouse undef
       ouse undef
     requirements:
-      CPAN::Meta 0
-      CPAN::Meta::Prereqs 0
-      Devel::PPPort 3.19
       ExtUtils::CBuilder 0
-      ExtUtils::ParseXS 3.22
       Module::Build 0.4005
-      Module::Build::XSUtil 0.14
+      Module::Build::XSUtil 0.19
       Scalar::Util 1.14
       XSLoader 0.02
       perl 5.008005
@@ -993,29 +1013,28 @@ DISTRIBUTIONS
       Test::SharedFork 0.19
       Time::HiRes 0
       perl 5.008001
-  Test-Tester-0.109
-    pathname: F/FD/FDALY/Test-Tester-0.109.tar.gz
+  Text-Xslate-Bridge-TT2Like-0.00010
+    pathname: D/DM/DMAKI/Text-Xslate-Bridge-TT2Like-0.00010.tar.gz
     provides:
-      Test::Tester 0.109
-      Test::Tester::Capture undef
-      Test::Tester::CaptureRunner undef
-      Test::Tester::Delegate undef
+      Text::Xslate::Bridge::TT2Like 0.00010
     requirements:
-      ExtUtils::MakeMaker 0
-      Test::Builder 0
-  Text-Xslate-3.3.3
-    pathname: S/SY/SYOHEX/Text-Xslate-3.3.3.tar.gz
+      ExtUtils::MakeMaker 6.42
+      Scalar::Util 0
+      Text::Xslate 1.3000
+      perl 5.008001
+  Text-Xslate-v3.5.8
+    pathname: S/SK/SKAJI/Text-Xslate-v3.5.8.tar.gz
     provides:
-      Text::Xslate 3.003003
+      Text::Xslate v3.5.8
       Text::Xslate::Bridge undef
       Text::Xslate::Bridge::Star undef
       Text::Xslate::Compiler undef
-      Text::Xslate::Engine 3.003003
+      Text::Xslate::Engine v3.5.8
       Text::Xslate::HashWithDefault undef
-      Text::Xslate::PP 3.003003
+      Text::Xslate::PP v3.5.8
       Text::Xslate::PP::Const undef
       Text::Xslate::PP::Method undef
-      Text::Xslate::PP::Opcode 3.003003
+      Text::Xslate::PP::Opcode v3.5.8
       Text::Xslate::PP::State undef
       Text::Xslate::PP::Type::Macro undef
       Text::Xslate::PP::Type::Pair undef
@@ -1030,25 +1049,14 @@ DISTRIBUTIONS
       Text::Xslate::Util undef
     requirements:
       Data::MessagePack 0.38
-      Devel::PPPort 3.19
-      ExtUtils::MakeMaker 6.59
-      ExtUtils::ParseXS 3.18
-      File::Copy::Recursive 0
-      Mouse 0.61
+      Encode 2.26
+      ExtUtils::CBuilder 0
+      Module::Build 0.4005
+      Module::Build::XSUtil 0.14
+      Mouse v2.5.0
       Scalar::Util 1.14
-      Test::More 0.88
-      Test::Requires 0
-      XSLoader 0.02
+      Storable 2.15
       parent 0.221
-      perl 5.008001
-  Text-Xslate-Bridge-TT2Like-0.00010
-    pathname: D/DM/DMAKI/Text-Xslate-Bridge-TT2Like-0.00010.tar.gz
-    provides:
-      Text::Xslate::Bridge::TT2Like 0.00010
-    requirements:
-      ExtUtils::MakeMaker 6.42
-      Scalar::Util 0
-      Text::Xslate 1.3000
       perl 5.008001
   Try-Tiny-0.22
     pathname: D/DO/DOY/Try-Tiny-0.22.tar.gz
