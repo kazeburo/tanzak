@@ -31,7 +31,6 @@ body {
 }
 
 </style>
-<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
 </head>
 <body>
 
@@ -64,7 +63,7 @@ tb.attr('href', 'https://twitter.com/share');
 tb.attr('class', 'twitter-share-button');
 tb.attr("data-text" , msg.c);
 tb.attr("data-size" ,"large") ;
-tb.attr("data-url" ,"<: $c.req.uri_for('/') :>) ;
+tb.attr("data-url" ,"<: $c.req.uri_for('/') :>") ;
 tb.attr("data-lang" ,"ja") ;
 $('#tanzaks').children().detach();
 $('#tanzaks').append(tb);
